@@ -7,9 +7,9 @@ async function connectToDatabase() {
       await mongoose.connect(db_link);
       console.log(`db connected `);
      // const fetched_data = await mongoose.connection.db.collection("usermodels").find({}).toArray();
-     const fetched_data = await usermodels.find({});
+    // const fetched_data = await usermodels.find({});
     
-  console.log(fetched_data);
+ // console.log(fetched_data);
     } catch (err) {
       console.log("....", err);
     }
